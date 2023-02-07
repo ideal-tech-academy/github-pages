@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: sans-serif, monospace;
+  background-color: #f5f6f6;
+}
+
+#header {
+  background-color: aqua;
+  display: flex;
+  background: linear-gradient(45deg, #A95CF8, #5ACBF7);
+}
+#header .logo {
+  display: block;
+  width: 17rem;
+  height: 2.5rem;
+  background-image: url(./assets/logos/logo_02.png);
+  margin: 0.5rem 1rem;
+  background-size: cover;
+}
+@media screen and (max-width: 420px) {
+  #header .logo {
+    width: 3rem;
+    height: 2.5rem;
+    background-image: url(./assets/logos/logo_04.png);
+  }
+}
+
+#main {
+  padding: 1rem;
+}
+#main .card {
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  color: #333;
+  background-color: white;
+  border-radius: 10px;
+}
+#main h2 {
+  color: #333;
+}
+#main .nav_button_area {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+#main .trans_page {
+  text-decoration: none;
+  color: white;
+
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #A95CF8, #5ACBF7);
+}
